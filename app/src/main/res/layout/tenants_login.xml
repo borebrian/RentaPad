@@ -47,26 +47,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingTop="30dp">
-            <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:textColorHint="#E67E22"
-                    android:layout_marginBottom="5dp"
 
-                    android:layout_height="wrap_content">
-                  <com.google.android.material.textfield.TextInputEditText
-                          android:layout_width="match_parent"
-                          android:backgroundTint="#E67E22"
-                          android:textStyle="bold"
-
-                          android:hint="Enter Room number"
-                          android:inputType="textCapCharacters"
-                          android:textColor="#E67E22"
-                          android:textColorHint="#E67E22"
-
-                          android:fontFamily="@font/century"
-                          android:layout_height="wrap_content"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:textColorHint="#E67E22"
