@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.rentapad">
+
+    <dist:module dist:instant="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/logo3"
+            android:roundIcon="@mipmap/logo3"
+            android:supportsRtl="true"
+
+
+     android:theme="@style/AppTheme">
+        <activity android:name=".Tenants"
+                  android:label="@string/app_name"
+                  android:theme="@style/AppTheme.NoActionBar"
+        ></activity>
+        <activity
+                android:name=".Secondpage"
+                android:label="@string/title_activity_secondpage"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Landlords"></activity>
+        <activity android:name=".Tenants_log_in"
+                  android:label="Tenants Log In"
+                    >
+
+        </activity>
+        <activity
+                android:name="com.journeyapps.barcodescanner.CaptureActivity"
+                android:screenOrientation="fullSensor"
+                tools:replace="android:screenOrientation"
+                 />
+        <activity
+                android:name=".Log_in_type"
+                android:label="@string/app_name"
+
+        >
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+
+        <!-- android:label="@string/app_name"-->

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true">
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg13"
+            android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/century"
+            android:gravity="center_horizontal"
+            android:text="Tenant Login"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+   <androidx.cardview.widget.CardView
+           android:padding="10dp"
+
+           android:layout_width="wrap_content"
+           android:layout_marginTop="230dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+             android:background="#fff"
+         
+            android:elevation="4dp"
+
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:textColorHint="#E67E22"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_height="wrap_content">
+                  <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:backgroundTint="#E67E22"
+                          android:textStyle="bold"
+
+                          android:hint="Enter Room number"
+                          android:inputType="textCapCharacters"
+                          android:textColor="#E67E22"
+                          android:textColorHint="#E67E22"
+
+                          android:fontFamily="@font/century"
+                          android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:textColorHint="#E67E22"
+                    android:layout_marginBottom="20dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#E67E22"
+                    android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:backgroundTint="#E67E22"
+                        android:hint="Enter password"
+
+                        android:inputType="textPassword"
+                        android:textColor="#E67E22"
+                        android:textStyle="bold"
+                        android:textColorHint="#E67E22"
+                        
+                        android:fontFamily="@font/century"
+                        android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+      <!--      <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingTop="5dp"
+                    android:textColor="#DC7633"
+                    
+                    android:text="Forgot Password?" />-->
+
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:background="#d67601"
+                    android:fontFamily="@font/century"
+                    android:text="Sign in"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+    <ImageButton
+            android:id="@+id/user_profile_photo"
+
+            android:layout_width="70dp"
+            android:scaleType="fitCenter"
+            android:layout_height="70dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:src="@drawable/bg10"/>
+</RelativeLayout>

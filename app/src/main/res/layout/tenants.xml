@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#D9E8F8"
+              android:layout_height="match_parent"
+
+              android:gravity="center">
+         >
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/loading"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.cardview.widget.CardView
+            android:id="@+id/internetDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#ffffff"
+            android:layout_margin="0dp"
+    >
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="bottom"
+                android:background="@drawable/bg7"
+        >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="#000000"
+                    android:gravity="bottom"
+                    android:alpha="0.7"
+                    android:layout_height="50dp">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:text="No internet connection"
+                        android:fontFamily="@font/century"
+                        android:textSize="20dp"
+
+                        android:layout_height="match_parent"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp">
+            <ImageView
+                    android:layout_width="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:layout_height="80dp" app:srcCompat="@drawable/internet"
+                    android:id="@+id/imageView3"
+            />
+            <TextView
+                    android:text="Oooops! no internet connection.Make sure you have internet access to access our services"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/century"
+                    android:textColor="#337AB7"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"/>
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="Turn On Data"/>
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:padding="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/webviewShow"
+            android:orientation="vertical" >
+              <WebView
+                      android:layout_width="match_parent"
+                      android:layout_margin="0dp"
+                      android:padding="0dp"
+                      android:id="@+id/webView1"
+                      android:layout_height="match_parent">
+
+              </WebView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</LinearLayout>

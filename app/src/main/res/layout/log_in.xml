@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              android:background="@drawable/bg1"
+                                              android:gravity="center"
+                                              android:orientation="vertical">
+
+<ImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/logo2"/>
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:fontFamily="@font/century"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            android:text="Select Module"/>
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        app:cardElevation="40dp"
+         >
+
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:paddingBottom="0dp"
+
+    >
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/landlords"
+
+
+        />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+
+                app:cornerRadius="8dp"
+                android:padding="10dp"
+                android:layout_marginRight="60px"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:textColor="#ffffff"
+                android:text="Landlord"
+                android:id="@+id/landlord"
+                android:layout_marginLeft="60px"
+                android:layout_gravity="left"
+                android:fontFamily="@font/century"
+                android:textStyle="bold"
+                android:layout_marginBottom="30sp"
+                android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:paddingBottom="0dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tenant"
+
+        />
+
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_marginRight="60px"
+
+                android:textColor="#ffffff"
+                android:text="Tenant"
+                app:cornerRadius="8dp"
+                android:padding="10dp"
+                android:id="@+id/tenants"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_marginLeft="60px"
+                android:layout_gravity="left"
+                android:fontFamily="@font/century"
+                android:textStyle="bold"
+                android:layout_marginBottom="30sp"
+                android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:paddingBottom="0dp">
+        <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/room_booking"
+
+        />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_marginRight="60px"
+                android:background="#71ACE0"
+                app:cornerRadius="8dp"
+                android:textColor="#ffffff"
+                android:id="@+id/booking"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                android:text="Room Booking"
+                android:layout_marginLeft="60px"
+                android:layout_gravity="left"
+                android:fontFamily="@font/century"
+                android:textStyle="bold"
+                android:layout_marginBottom="30sp"
+                android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
